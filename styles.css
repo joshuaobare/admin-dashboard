@@ -14,6 +14,35 @@ body {
 
 .header {
     grid-area: 1/2/2/2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+.header-upper {
+    display:grid;
+    grid-template-columns: 1fr 8fr 1fr 1fr;
+    align-items: center;
+}
+
+input {
+    height:20px;
+    border-radius: 15px;
+    background-color: #e2e8f0;
+    border: none;
+}
+.header-lower {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-lower-buttons {
+    place-self: center;
+    gap:60px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .sidebar {
@@ -103,4 +132,19 @@ body {
     margin-bottom: 10px;
     border-bottom: 2px solid #e2e8f0;
     padding: 5px;
+}
+
+button {
+    background-color: #1992d4 ;
+    color: white;
+    border-radius: 15px;
+    padding:5px 20px;
+    font-weight: bolder;
+    font-size: 14px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid black;
+    color: #1992d4;
 }
