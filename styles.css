@@ -22,8 +22,9 @@ body {
 
 .header-upper {
     display:grid;
-    grid-template-columns: 1fr 8fr 1fr 1fr;
+    grid-template-columns: 1fr 8fr 1fr 1fr 2fr;
     align-items: center;
+    justify-content: center;
 }
 
 input {
@@ -34,7 +35,7 @@ input {
 }
 .header-lower {
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 3fr 2fr;
     justify-content: center;
     align-items: center;
 }
@@ -44,6 +45,17 @@ input {
     gap:60px;
     display: flex;
     justify-content: space-between;
+}
+
+.header-lower-text {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.lower-text {
+    font-size: 24px;
+    font-weight: bolder;
 }
 
 .sidebar {
@@ -116,6 +128,11 @@ input {
 .avatar {
     width:50px;
     height:50px;
+}
+
+.lower-avatar {
+    width:70px;
+    height:70px;
 }
 
 .card {
